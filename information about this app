@@ -1,0 +1,48 @@
+Clothing Store Management System - BouDev Management
+1. Application Definition
+A PyQt5-based desktop application designed to streamline operations for clothing retailers by managing sales, inventory, finances, and customer interactions through an intuitive Arabic-language interface.
+
+2. Core Purpose
+Digitalize clothing store operations from point-of-sale to profit tracking
+
+Replace manual processes (paper receipts, Excel stock tracking)
+
+Provide real-time business insights (best-selling items, profit margins)
+
+Secure sensitive data (sales history, inventory costs)
+
+3. Key Features
+Feature Category	Description
+Point of Sale (POS)	Process sales, generate invoices, handle returns, and track customer purchases
+Inventory Management	Track clothing items by size/color, low-stock alerts, barcode support
+Profit Analytics	Calculate gross/net profit per item/category with visual dashboards (Admin only)
+Multi-User Support	Role-based access (Admin/Seller) with activity logging
+Financial Tracking	Record expenses (rent, utilities) and income streams
+Customer Management	Track purchase history and preferences (future CRM integration)
+4. Technical Specifications
+Component	Details
+Framework	PyQt5 (Python)
+Database	SQLite (local) with stock_management.db + data.db
+UI Language	Arabic RTL (Right-to-Left) interface
+Security	Bcrypt password hashing + HMAC activation keys
+Modules	7 interactive tabs with real-time data sync
+5. User Roles
+a. Admin (المشرف)
+
+Full system access
+
+View financial reports/profits
+
+Modify system settings
+
+Manage user accounts
+
+b. Seller (البائع)
+
+Process sales transactions
+
+View inventory (no cost data)
+
+Access sales history
+
+Restricted from: Profit tabs, financials, and settings
